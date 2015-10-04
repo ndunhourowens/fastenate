@@ -1,5 +1,68 @@
-body {
-  h1 {
-    background-color: #fff;
+@import "partials/settings.scss";
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+@import 'foundation/components/grid';
+@import 'foundation/components/buttons';
+@import 'foundation/components/top-bar';
+@import 'foundation/components/visibility';
+
+//background-color: #A74222;
+
+
+html, body{
+  background-image: url("/assets/bg.jpg");
+  height: 100%;
+}
+
+.top{
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  background-image: url("/assets/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  h1{
+    background-image: url("/assets/header_bg.svg");
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+
   }
+
+}
+.nav{
+  background-color: #3A3A3C;
+  width: 100%;
+  height: 40px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+//============== footer ============
+.main{
+  min-height: 100%;
+  margin-bottom: -50px;
+  // margin: 0;
+}
+.main:after{
+  content: "";
+  display: block;
+  margin:0;
+}
+.footer, .main:after {
+  height:50px;
+  margin:0;
+}
+
+.footer{
+  width: 100%;
+  background: #3A3A3C;
+  background-image: url("/assets/facebook_grey.svg");
+  background-repeat: no-repeat;
+  background-position:center;
+
+
+
 }
