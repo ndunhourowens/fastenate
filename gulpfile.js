@@ -12,13 +12,24 @@ var PathTo = {
 gulp.task('watch-files', function (){
   gulp.watch(PathTo.SassFiles, ['compile-sass']);
   gulp.watch(PathTo.PublicCssFiles, ['html']);
+  gulp.watch('./public/**/*', ['livereload']);
+
+});
+
+gulp.task('livereload', function (){
+  gulp.src('./public/**/*')
+  .pipe(connect.reload());
 });
 
 gulp.task('compile-sass', function (){
   return gulp
-          .src(PathTo.SassFiles, ['compile-sass'])
-          .pipe(sass({ errLogToConsole: true }))
-          .pipe(gulp.dest(PathTo.PublicCss));
+    .src(PathTo.SassFiles, ['compile-sass'])
+    .pipe(sass({
+      errLogToConsole: true,
+      sourceComments: true,
+      includePaths: ['bower_components/foundation/scss']
+    }).on('error', sass.logError))
+    .pipe(gulp.dest(PathTo.PublicCss));
 });
 
 gulp.task('html', function (){
