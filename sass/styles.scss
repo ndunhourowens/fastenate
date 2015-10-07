@@ -8,24 +8,28 @@
 @import 'foundation/components/visibility';
 
 //background-color: #A74222;
+// font #88898C;
 
-
-html, body{
+html, body,{
   background-image: url("/assets/bg.jpg");
   height: 100%;
+}
+
+.main{
+  height:100%;
 }
 
 .top{
   background-color: white;
   width: 100%;
-  height: 50px;
+  height: 80px;
   background-image: url("/assets/logo.svg");
   background-repeat: no-repeat;
   background-position: center;
 
   h1{
     background-image: url("/assets/header_bg.svg");
-    height: 30px;
+    height: 60px;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -35,34 +39,80 @@ html, body{
 .nav{
   background-color: #3A3A3C;
   width: 100%;
-  height: 40px;
   color: white;
   text-align: center;
+  display: block;
   padding: 10px;
+
+  a{
+    display: inline;
+    &:nth-child(n+2):before {
+    display: inline-block;
+    margin: 5px;
+      content: '•';
+    }
+    &:link{
+      color:white;
+      text-decoration: none;
+    }
+    &:visited{
+      color:white;
+      // color:#FF4200;
+      text-decoration: none;
+    }
+    &:hover{
+      color:#FF4200;
+      text-decoration: none;
+    }
+
+  }
+
 }
+
+.content{
+  width:800px;
+  margin:auto;
+
+  .wrapper{
+    max-width: 400px;
+    border:1px solid white;
+    background: white;
+    padding:20px;
+    margin:20px 10px;
+    &:hover{
+      border:5px solid orange;
+    }
+
+    img{
+      border:1px solid black;
+      margin:auto;
+    }
+
+  }
+}
+
+
+
+
 //============== footer ============
 .main{
-  min-height: 100%;
-  margin-bottom: -50px;
+  // min-height: 100%;
+  // margin-bottom: -142px;
   // margin: 0;
 }
-.main:after{
-  content: "";
-  display: block;
-  margin:0;
-}
+// .main:after{
+//   content: "";
+//   display: block;
+//   // margin:0;
+// }
 .footer, .main:after {
-  height:50px;
-  margin:0;
+  // height:50px;
+  // margin:0;
 }
 
 .footer{
-  width: 100%;
-  background: #3A3A3C;
-  background-image: url("/assets/facebook_grey.svg");
-  background-repeat: no-repeat;
-  background-position:center;
-
+  background: grey;
+  width:100%;
 
 
 }

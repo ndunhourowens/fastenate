@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Lato);
 /* line 364, bower_components/foundation/scss/foundation/components/_global.scss */
@@ -3204,49 +3205,73 @@ html, body {
   height: 100%; }
 
 /* line 18, stdin */
+.main {
+  height: 100%; }
+
+/* line 22, stdin */
 .top {
   background-color: white;
   width: 100%;
-  height: 50px;
+  height: 80px;
   background-image: url("/assets/logo.svg");
   background-repeat: no-repeat;
   background-position: center; }
-  /* line 26, stdin */
+  /* line 30, stdin */
   .top h1 {
     background-image: url("/assets/header_bg.svg");
-    height: 30px;
+    height: 60px;
     background-position: center;
     background-repeat: no-repeat; }
 
-/* line 35, stdin */
+/* line 39, stdin */
 .nav {
   background-color: #3A3A3C;
   width: 100%;
-  height: 40px;
   color: white;
   text-align: center;
-  padding: 10px; }
-
-/* line 44, stdin */
-.main {
-  min-height: 100%;
-  margin-bottom: -50px; }
-
-/* line 49, stdin */
-.main:after {
-  content: "";
   display: block;
-  margin: 0; }
+  padding: 10px; }
+  /* line 47, stdin */
+  .nav a {
+    display: inline; }
+    /* line 49, stdin */
+    .nav a:nth-child(n+2):before {
+      display: inline-block;
+      margin: 5px;
+      content: '•'; }
+    /* line 54, stdin */
+    .nav a:link {
+      color: white;
+      text-decoration: none; }
+    /* line 58, stdin */
+    .nav a:visited {
+      color: white;
+      text-decoration: none; }
+    /* line 63, stdin */
+    .nav a:hover {
+      color: #FF4200;
+      text-decoration: none; }
 
-/* line 54, stdin */
-.footer, .main:after {
-  height: 50px;
-  margin: 0; }
+/* line 72, stdin */
+.content {
+  width: 800px;
+  margin: auto; }
+  /* line 76, stdin */
+  .content .wrapper {
+    max-width: 400px;
+    border: 1px solid white;
+    background: white;
+    padding: 20px;
+    margin: 20px 10px; }
+    /* line 82, stdin */
+    .content .wrapper:hover {
+      border: 5px solid orange; }
+    /* line 86, stdin */
+    .content .wrapper img {
+      border: 1px solid black;
+      margin: auto; }
 
-/* line 59, stdin */
+/* line 113, stdin */
 .footer {
-  width: 100%;
-  background: #3A3A3C;
-  background-image: url("/assets/facebook_grey.svg");
-  background-repeat: no-repeat;
-  background-position: center; }
+  background: grey;
+  width: 100%; }
