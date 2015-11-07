@@ -32,7 +32,6 @@ html, body,{
     height: 60px;
     background-position: center;
     background-repeat: no-repeat;
-
   }
 
 }
@@ -72,13 +71,16 @@ html, body,{
 .content{
   width:800px;
   margin:auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
 
   .wrapper{
-    max-width: 400px;
+    max-width: 800px;
     border:1px solid white;
     background: white;
     padding:20px;
-    margin:20px 10px;
+    margin:auto;
     &:hover{
       border:5px solid orange;
     }
@@ -87,7 +89,9 @@ html, body,{
       border:1px solid black;
       margin:auto;
     }
-
+  // @media #{$small}{
+  //   width: 100%;
+  // }
   }
 }
 
@@ -113,6 +117,6 @@ html, body,{
 .footer{
   background: grey;
   width:100%;
-
+  margin: auto;
 
 }

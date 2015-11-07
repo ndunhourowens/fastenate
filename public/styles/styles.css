@@ -3223,7 +3223,7 @@ html, body {
     background-position: center;
     background-repeat: no-repeat; }
 
-/* line 39, stdin */
+/* line 38, stdin */
 .nav {
   background-color: #3A3A3C;
   width: 100%;
@@ -3231,47 +3231,50 @@ html, body {
   text-align: center;
   display: block;
   padding: 10px; }
-  /* line 47, stdin */
+  /* line 46, stdin */
   .nav a {
     display: inline; }
-    /* line 49, stdin */
+    /* line 48, stdin */
     .nav a:nth-child(n+2):before {
       display: inline-block;
       margin: 5px;
       content: '•'; }
-    /* line 54, stdin */
+    /* line 53, stdin */
     .nav a:link {
       color: white;
       text-decoration: none; }
-    /* line 58, stdin */
+    /* line 57, stdin */
     .nav a:visited {
       color: white;
       text-decoration: none; }
-    /* line 63, stdin */
+    /* line 62, stdin */
     .nav a:hover {
       color: #FF4200;
       text-decoration: none; }
 
-/* line 72, stdin */
+/* line 71, stdin */
 .content {
   width: 800px;
-  margin: auto; }
-  /* line 76, stdin */
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  /* line 78, stdin */
   .content .wrapper {
-    max-width: 400px;
+    max-width: 800px;
     border: 1px solid white;
     background: white;
     padding: 20px;
-    margin: 20px 10px; }
-    /* line 82, stdin */
+    margin: auto; }
+    /* line 84, stdin */
     .content .wrapper:hover {
       border: 5px solid orange; }
-    /* line 86, stdin */
+    /* line 88, stdin */
     .content .wrapper img {
       border: 1px solid black;
       margin: auto; }
 
-/* line 113, stdin */
+/* line 117, stdin */
 .footer {
   background: grey;
-  width: 100%; }
+  width: 100%;
+  margin: auto; }
